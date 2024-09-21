@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #232526, #414345);
+}
+
+.box {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  display: flex;
+  width: 720px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 5px 10px rgb(0, 0, 0);
+  text-align: justify;
+}
+
+.img-container {
+  height: 320px;
+  width: 280px;
+  border-radius: 12px;
+  padding: 3px;
+  background: #250040;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.img-container img:hover {
+  transform: scale(1.05);
+}
+
+.content .details {
+  width: 58%;
+  margin: 10px 0 20px 20px;
+  color: #250040;
+}
+
+.content .details .name {
+  font-size: 23px;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content .details .bio {
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content .details p {
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+.media-icons {
+  position: absolute;
+  bottom: 16px;
+  right: 15px;
+  margin-top: 12px;
+  justify-content: flex-end;
+}
+
+.media-icons i {
+  display: inline-flex;
+  margin: 0 4px;
+  font-size: 16px;
+  color: #092c3e;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.media-icons i:hover {
+  color: #250040;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 730px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .img-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .content .details {
+    width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .content .details .name {
+    font-size: 20px;
+  }
+
+  .content .details .bio {
+    font-size: 16px;
+  }
+
+  .content .details p {
+    font-size: 14px;
+  }
+
+  .media-icons {
+    position: static;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .media-icons i {
+    font-size: 18px;
+  }
+}
